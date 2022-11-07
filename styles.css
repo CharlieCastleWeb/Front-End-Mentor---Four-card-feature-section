@@ -1,0 +1,142 @@
+
+/* RESET */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ /* VARIABLES */
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+/* TYPOGRAPHY */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: var(--very-dark-blue);
+}
+
+h1 {
+    font-weight: 200;
+    line-height: 1.2em;
+    font-size: 1.7em;
+}
+
+h1 span {
+    font-weight: 600;
+}
+
+h2,
+p {
+    color: var(--grayish-blue);
+}
+
+h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.05em;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* LAYOUT */
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--very-light-gray);
+}
+
+main, 
+footer {
+    margin-top: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+}
+
+h1 {
+    margin-top: 2em;
+}
+
+h1 span {
+    display: block;
+}
+
+h2 {
+    margin-top: 1em;
+}
+
+.cards,
+.central-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards {
+    margin-top: 1.5em;
+}
+
+.card {
+    
+    border-top: 3px solid black;
+    border-radius: 4px;
+    margin-top: 2em;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 15px 15px,
+                rgba(0, 0, 0, 0.15) 0px 15px 15px;
+    padding: 1.5em 2em 1.5em 2em;
+    /* height: 200px; */
+    background-color: white;
+}
+
+.card p {
+    font-weight: 200;
+}
+
+.card img {
+    display: block;
+    margin-left: auto;
+    margin-top: 3em;
+}
+
+.cyan-border {
+    border-color: var(--cyan);
+}
+
+.red-border {
+    border-color: var(--red);
+}
+
+.orange-border {
+    border-color: var(--orange);
+}
+
+.blue-border {
+    border-color: var(--blue);
+}
+
+footer {
+    margin-top: 4em;
+    margin-bottom: 1em;
+}
+
+/* MEDIA QUERIES */
+
