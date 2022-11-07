@@ -96,14 +96,13 @@ h2 {
 }
 
 .card {
-    
+    width: 85vw;
     border-top: 3px solid black;
     border-radius: 4px;
     margin-top: 2em;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 15px 15px,
                 rgba(0, 0, 0, 0.15) 0px 15px 15px;
     padding: 1.5em 2em 1.5em 2em;
-    /* height: 200px; */
     background-color: white;
 }
 
@@ -140,3 +139,31 @@ footer {
 
 /* MEDIA QUERIES */
 
+@media (min-width: 800px) {
+
+
+    h2 {
+        width: 40%;
+    }
+
+    .cards {
+        flex-direction: row;
+        /* border: 1px solid rebeccapurple; */
+    }
+
+    .card {
+        /* width: 350px; */
+        width: 25vw;
+        /* height: 250px; */
+        height: 29vh;
+        margin: 1em;
+    }
+
+    .card p {
+        width: 90%;
+    }
+
+    footer {
+        margin-top: 2em;
+    }
+}
