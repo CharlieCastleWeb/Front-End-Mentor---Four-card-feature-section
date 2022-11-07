@@ -148,13 +148,10 @@ footer {
 
     .cards {
         flex-direction: row;
-        /* border: 1px solid rebeccapurple; */
     }
 
     .card {
-        /* width: 350px; */
         width: 25vw;
-        /* height: 250px; */
         height: 29vh;
         margin: 1em;
     }
